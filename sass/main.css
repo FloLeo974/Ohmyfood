@@ -87,4 +87,63 @@ footer ul p {
   padding: 15px 21px 16px 21px;
   border-radius: 25px 25px;
   background: linear-gradient(173deg, #FF79DA, #9356DC);
+}
+
+.fonctionnement {
+  margin-bottom: 67px;
+}
+
+.fonctionnement h2 {
+  margin: 47px 0 27px 22px;
+}
+
+.fonctionnement__etapes {
+  margin-bottom: 18px;
+}
+
+.fonctionnement__etape {
+  display: flex;
+  align-items: center;
+  width: 323px;
+  margin-bottom: 22px;
+  margin-left: 32px;
+  padding: 12px 0;
+  border-radius: 20px 20px;
+  box-shadow: 1px 8px 6px rgb(234, 234, 234);
+}
+
+.etape-numero {
+  font-size: 14px;
+  color: white;
+  background-color: #9356DC;
+  margin-left: -11px;
+  padding: 3px 8px;
+  border-radius: 20px 20px;
+}
+
+.etape-texte {
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.fonctionnement i {
+  margin-left: 21px;
+}
+
+.fa-mobile-screen-button {
+  font-size: 20px;
+  color: rgb(126, 126, 126);
+  margin-right: 26px;
+}
+
+.fa-list-ul {
+  font-size: 19px;
+  color: rgb(126, 126, 126);
+  margin-right: 22px;
+}
+
+.fa-store {
+  font-size: 18px;
+  color: #9356DC;
+  margin-right: 21px;
 }/*# sourceMappingURL=main.css.map */
