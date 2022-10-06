@@ -1,9 +1,27 @@
 body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    width: 100%;
+    margin: 0 0;
+}
 
+header {
+    text-align: center;
+    height: 62px;
+}
+
+main {
+    background-color: grey;
 }
 
 h1, h2 .menu, h5 {
     font-family: 'shrikhand', sans-serif;
+}
+
+h1 {
+    margin: 0 0;
+    padding-top: 13px;
+    height: 100%;
+    font-weight: normal;
+    font-size: 30px;
 }
