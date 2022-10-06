@@ -1,5 +1,6 @@
 .infos {
     text-align: center;
+    padding-bottom: 73px;
 }
 
 .infos, .fonctionnement__etape, .restaurants {
@@ -23,4 +24,26 @@
 
 .filtre i {
     margin: 0 11px 0 74px;
+}
+
+.infos h2 {
+    max-width: 285px;
+    line-height: 28px;
+    margin: 38px auto 0 auto;
+}
+
+.infos p {
+    max-width: 320px;
+    font-size: 17.5px;
+    margin: 13px auto 45px auto;
+    color: rgb(101, 101, 101)
+}
+
+.infos a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px 21px 16px 21px;
+    border-radius: 25px 25px;
+    background: linear-gradient(173deg, $couleur-secondaire, $couleur-primaire);
 }
