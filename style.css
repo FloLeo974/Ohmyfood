@@ -10,10 +10,6 @@ header {
   height: 62px;
 }
 
-main {
-  background-color: grey;
-}
-
 h1, h2 .menu, h5 {
   font-family: "shrikhand", sans-serif;
 }
@@ -24,6 +20,50 @@ h1 {
   height: 100%;
   font-weight: normal;
   font-size: 30px;
+}
+
+h5 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+footer ul {
+  margin: 0 0;
+}
+
+footer ul p {
+  margin-bottom: 0;
+}
+
+.infos {
+  text-align: center;
+}
+
+.infos, .fonctionnement__etape, .restaurants {
+  background-color: rgb(246, 246, 246);
+}
+
+.filtre {
+  background-color: rgb(234, 234, 234);
+  color: rgb(53, 53, 53);
+  height: 50px;
+}
+
+.filtre input {
+  background-color: rgb(234, 234, 234);
+  color: rgb(53, 53, 53);
+  border: none;
+  margin-top: 15px;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.filtre i {
+  margin: 0 11px 0 74px;
 }
 
 /*# sourceMappingURL=style.css.map */

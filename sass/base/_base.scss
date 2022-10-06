@@ -10,10 +10,6 @@ header {
     height: 62px;
 }
 
-main {
-    background-color: grey;
-}
-
 h1, h2 .menu, h5 {
     font-family: 'shrikhand', sans-serif;
 }
@@ -24,4 +20,21 @@ h1 {
     height: 100%;
     font-weight: normal;
     font-size: 30px;
+}
+
+h5 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: $gris-fonce;
+    color: white;
+}
+
+footer ul {
+    margin: 0 0;
+}
+
+footer ul p {
+    margin-bottom: 0;
 }
