@@ -30,11 +30,9 @@ footer {
   background-color: rgb(53, 53, 53);
   color: white;
 }
-
 footer ul {
   margin: 0 0;
 }
-
 footer ul p {
   margin-bottom: 0;
 }
@@ -42,6 +40,25 @@ footer ul p {
 .infos {
   text-align: center;
   padding-bottom: 73px;
+}
+.infos h2 {
+  max-width: 285px;
+  line-height: 28px;
+  margin: 38px auto 0 auto;
+}
+.infos p {
+  max-width: 320px;
+  font-size: 17.5px;
+  margin: 13px auto 45px auto;
+  color: rgb(101, 101, 101);
+}
+.infos a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 15px 21px 16px 21px;
+  border-radius: 25px 25px;
+  background: linear-gradient(173deg, #FF79DA, #9356DC);
 }
 
 .infos, .fonctionnement__etape, .restaurants {
@@ -53,7 +70,6 @@ footer ul p {
   color: rgb(53, 53, 53);
   height: 50px;
 }
-
 .filtre input {
   background-color: rgb(234, 234, 234);
   color: rgb(53, 53, 53);
@@ -62,45 +78,19 @@ footer ul p {
   font-size: 14.5px;
   font-weight: 600;
 }
-
 .filtre i {
   margin: 0 11px 0 74px;
-}
-
-.infos h2 {
-  max-width: 285px;
-  line-height: 28px;
-  margin: 38px auto 0 auto;
-}
-
-.infos p {
-  max-width: 320px;
-  font-size: 17.5px;
-  margin: 13px auto 45px auto;
-  color: rgb(101, 101, 101);
-}
-
-.infos a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 15px 21px 16px 21px;
-  border-radius: 25px 25px;
-  background: linear-gradient(173deg, #FF79DA, #9356DC);
 }
 
 .fonctionnement {
   margin-bottom: 67px;
 }
-
 .fonctionnement h2 {
   margin: 47px 0 27px 22px;
 }
-
 .fonctionnement__etapes {
   margin-bottom: 18px;
 }
-
 .fonctionnement__etape {
   display: flex;
   align-items: center;
@@ -110,6 +100,9 @@ footer ul p {
   padding: 12px 0;
   border-radius: 20px 20px;
   box-shadow: 1px 8px 6px rgb(234, 234, 234);
+}
+.fonctionnement i {
+  margin-left: 21px;
 }
 
 .etape-numero {
@@ -124,10 +117,6 @@ footer ul p {
 .etape-texte {
   font-weight: 500;
   margin: 16px 0;
-}
-
-.fonctionnement i {
-  margin-left: 21px;
 }
 
 .fa-mobile-screen-button {
@@ -146,6 +135,11 @@ footer ul p {
   font-size: 18px;
   color: #9356DC;
   margin-right: 21px;
+}
+
+#restaurants {
+  margin: 0 0 22px 20px;
+  padding-top: 52px;
 }
 
 /*# sourceMappingURL=style.css.map */

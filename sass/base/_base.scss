@@ -29,12 +29,10 @@ h5 {
 footer {
     background-color: $gris-fonce;
     color: white;
-}
-
-footer ul {
-    margin: 0 0;
-}
-
-footer ul p {
-    margin-bottom: 0;
+    ul {
+        margin: 0 0;
+        p {
+            margin-bottom: 0;
+        }
+    }
 }
