@@ -237,4 +237,13 @@ footer li {
   box-shadow: 0 0 1px rgb(153, 226, 208);
 }
 
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 15px 21px 16px 21px;
+  border-radius: 25px 25px;
+  background: linear-gradient(173deg, #FF79DA, #9356DC);
+}
+
 /*# sourceMappingURL=style.css.map */
