@@ -237,6 +237,18 @@ footer li {
   box-shadow: 0 0 1px rgb(153, 226, 208);
 }
 
+header {
+  position: relative;
+}
+
+header a {
+  position: absolute;
+  top: 22px;
+  left: 23px;
+  font-size: 20px;
+  color: rgb(53, 53, 53);
+}
+
 .menu a {
   color: white;
   text-decoration: none;
