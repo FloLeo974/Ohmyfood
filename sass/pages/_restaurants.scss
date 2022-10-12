@@ -92,8 +92,11 @@ header a {
         font-weight: 500;
         padding: 15px 49px 16px 49px;
         border-radius: 25px 25px;
-        background: linear-gradient(173deg, $couleur-secondaire, $couleur-primaire); 
+        background: linear-gradient(173deg, $couleur-secondaire, $couleur-primaire);
+        &:hover {
+            filter: brightness(1.15);
         }
+    }
 }
 
 .desactive {

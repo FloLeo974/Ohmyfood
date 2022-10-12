@@ -95,6 +95,9 @@ footer li {
   border-radius: 25px 25px;
   background: linear-gradient(173deg, #FF79DA, #9356DC);
 }
+.infos a:hover {
+  filter: brightness(1.15);
+}
 
 .infos, .fonctionnement__etape, .restaurants {
   background-color: rgb(246, 246, 246);
@@ -333,6 +336,9 @@ header a {
   padding: 15px 49px 16px 49px;
   border-radius: 25px 25px;
   background: linear-gradient(173deg, #FF79DA, #9356DC);
+}
+.bouton-commander a:hover {
+  filter: brightness(1.15);
 }
 
 .desactive {
