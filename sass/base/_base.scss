@@ -61,3 +61,21 @@ footer {
         padding-bottom: 8px;
     }
 }
+
+.desactive {
+    position: relative;
+}
+
+.active {
+    transition: all 350ms;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
+    opacity: 0;
+    &:hover {
+        opacity: 1;
+    }
+}

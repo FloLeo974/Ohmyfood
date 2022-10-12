@@ -98,18 +98,3 @@ header a {
         }
     }
 }
-
-.desactive {
-    position: relative;
-}
-
-.active {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    color: $couleur-primaire;
-    opacity: 0;
-    &:hover {
-        opacity: 1;
-    }
-}
