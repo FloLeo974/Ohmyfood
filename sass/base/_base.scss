@@ -60,4 +60,12 @@ footer {
         align-items: center;
         padding-bottom: 8px;
     }
+    a {
+        color: white;
+        &:hover {
+            font-weight: bold;
+            font-style: italic;
+            color: $couleur-secondaire;
+        }
+    }
 }

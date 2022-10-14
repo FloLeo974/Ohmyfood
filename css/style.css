@@ -61,6 +61,14 @@ footer li {
   align-items: center;
   padding-bottom: 8px;
 }
+footer a {
+  color: white;
+}
+footer a:hover {
+  font-weight: bold;
+  font-style: italic;
+  color: #FF79DA;
+}
 
 .fa-utensils {
   font-size: 13px;
