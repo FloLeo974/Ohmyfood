@@ -63,6 +63,12 @@
         padding: 12px 0;
         border-radius: 20px 20px;
         box-shadow: 1px 8px 6px $gris;
+        &:hover {
+        background-color: $couleur-tertiaire;
+            i {
+                color: $couleur-primaire;
+            }
+        }
     }
     i {
         margin-left: 21px;
@@ -97,7 +103,7 @@
 
 .fa-store {
     font-size: 18px;
-    color: $couleur-primaire;
+    color: rgb(126, 126, 126);
     margin-right: 21px;
 }
 

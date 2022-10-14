@@ -153,6 +153,12 @@ footer li {
   border-radius: 20px 20px;
   box-shadow: 1px 8px 6px rgb(234, 234, 234);
 }
+.fonctionnement__etape:hover {
+  background-color: #99E2D0;
+}
+.fonctionnement__etape:hover i {
+  color: #9356DC;
+}
 .fonctionnement i {
   margin-left: 21px;
 }
@@ -185,7 +191,7 @@ footer li {
 
 .fa-store {
   font-size: 18px;
-  color: #9356DC;
+  color: rgb(126, 126, 126);
   margin-right: 21px;
 }
 
