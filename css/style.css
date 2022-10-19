@@ -110,10 +110,10 @@ footer a:hover {
   color: rgb(101, 101, 101);
 }
 .infos a {
+  padding: 15px 21px 16px 21px;
   color: white;
   text-decoration: none;
   font-weight: 500;
-  padding: 15px 21px 16px 21px;
   border-radius: 25px 25px;
   background: linear-gradient(173deg, #FF79DA, #9356DC);
 }
@@ -357,10 +357,10 @@ header a {
   text-align: center;
 }
 .bouton-commander a {
+  padding: 15px 49px 16px 49px;
   color: white;
   text-decoration: none;
   font-weight: 500;
-  padding: 15px 49px 16px 49px;
   border-radius: 25px 25px;
   background: linear-gradient(173deg, #FF79DA, #9356DC);
 }
