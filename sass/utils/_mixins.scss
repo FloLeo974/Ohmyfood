@@ -4,7 +4,9 @@
     font-weight: 500;
     border-radius: 25px 25px;
     background: linear-gradient(173deg, $couleur-secondaire, $couleur-primaire);
+    box-shadow: 1px 1px 5px $gris-fonce;
     &:hover {
         filter: brightness(1.15);
+        box-shadow: 3px 5px 5px $gris-fonce;
     }
 }

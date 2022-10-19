@@ -116,9 +116,11 @@ footer a:hover {
   font-weight: 500;
   border-radius: 25px 25px;
   background: linear-gradient(173deg, #FF79DA, #9356DC);
+  box-shadow: 1px 1px 5px rgb(53, 53, 53);
 }
 .infos a:hover {
   filter: brightness(1.15);
+  box-shadow: 3px 5px 5px rgb(53, 53, 53);
 }
 
 .infos, .fonctionnement__etape, .restaurants {
@@ -363,9 +365,11 @@ header a {
   font-weight: 500;
   border-radius: 25px 25px;
   background: linear-gradient(173deg, #FF79DA, #9356DC);
+  box-shadow: 1px 1px 5px rgb(53, 53, 53);
 }
 .bouton-commander a:hover {
   filter: brightness(1.15);
+  box-shadow: 3px 5px 5px rgb(53, 53, 53);
 }
 
 /*# sourceMappingURL=style.css.map */
