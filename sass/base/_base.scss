@@ -54,6 +54,9 @@ footer {
         p {
             margin: 0 0;
         }
+        @include min-tablette {
+            align-items: center;
+        }
     }
     li {
         display: flex;
@@ -67,5 +70,8 @@ footer {
             font-style: italic;
             color: $couleur-secondaire;
         }
+    }
+    @include min-tablette {
+        text-align: center;
     }
 }

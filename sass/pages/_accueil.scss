@@ -39,6 +39,19 @@
         }
     }
 
+main h2 {
+    @include min-tablette {
+        text-align: center;
+        margin-bottom: 35px;
+        .fonctionnement {
+            margin-top: 35px;
+        }
+        .restaurants{
+            padding-top: 35px;
+        }
+    }
+}
+
 .fonctionnement {
     margin-bottom: 67px;
     h2 {
@@ -46,6 +59,11 @@
     }
     &__etapes {
         margin-bottom: 18px;
+        @include min-tablette {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
     &__etape {
         display: flex;
@@ -78,6 +96,9 @@
 .etape-texte {
     font-weight: 500;
     margin: 16px 0;
+    @include min-tablette {
+        margin-right: 20px;
+    }
 }
 
 .fa-mobile-screen-button {
@@ -109,7 +130,7 @@
 
 .selection-restaurants {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .carte {
@@ -147,6 +168,12 @@
     i {
         font-size: 23px;
         margin-bottom: 9px;
+    }
+    @include min-tablette {
+        max-width: 350px;
+    }
+    @include min-desktop {
+        max-width: 275px;
     }
 }
 

@@ -12,12 +12,16 @@
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     transition: all 350ms;
-  }
-  .fa-heart:hover {
-    text-shadow: none;
-    color: transparent;
-    background-image: linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
-    background-clip: text;
-    transform: scale(1.15);
-  }
-  
+    &:hover {
+      text-shadow: none;
+      color: transparent;
+      background-image: linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
+      background-clip: text;
+      transform: scale(1.15);
+      }
+      /* en attente
+    &:active {
+      animation: remplissage 350ms forwards;
+    }
+    */
+}

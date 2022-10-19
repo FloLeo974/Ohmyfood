@@ -1,3 +1,18 @@
+/* en attente
+@keyframes remplissage {
+    0% {
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    100% {
+        text-shadow: none;
+        color: transparent;
+        background-image: linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
+        background-clip: text;
+        transform: scale(1.15);
+    }
+}
+*/
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -56,6 +71,11 @@ footer ul {
 footer ul p {
   margin: 0 0;
 }
+@media all and (min-width: 769px) {
+  footer ul {
+    align-items: center;
+  }
+}
 footer li {
   display: flex;
   align-items: center;
@@ -68,6 +88,11 @@ footer a:hover {
   font-weight: bold;
   font-style: italic;
   color: #FF79DA;
+}
+@media all and (min-width: 769px) {
+  footer {
+    text-align: center;
+  }
 }
 
 .fa-utensils {
@@ -84,8 +109,12 @@ footer a:hover {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   transition: all 350ms;
+  /* en attente
+  &:active {
+    animation: remplissage 350ms forwards;
+  }
+  */
 }
-
 .fa-heart:hover {
   text-shadow: none;
   color: transparent;
@@ -144,6 +173,19 @@ footer a:hover {
   margin: 0 11px 0 74px;
 }
 
+@media all and (min-width: 769px) {
+  main h2 {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  main h2 .fonctionnement {
+    margin-top: 35px;
+  }
+  main h2 .restaurants {
+    padding-top: 35px;
+  }
+}
+
 .fonctionnement {
   margin-bottom: 67px;
 }
@@ -152,6 +194,13 @@ footer a:hover {
 }
 .fonctionnement__etapes {
   margin-bottom: 18px;
+}
+@media all and (min-width: 769px) {
+  .fonctionnement__etapes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .fonctionnement__etape {
   display: flex;
@@ -184,6 +233,11 @@ footer a:hover {
   font-weight: 500;
   margin: 16px 0;
 }
+@media all and (min-width: 769px) {
+  .etape-texte {
+    margin-right: 20px;
+  }
+}
 
 .fa-mobile-screen-button {
   font-size: 20px;
@@ -214,7 +268,7 @@ footer a:hover {
 
 .selection-restaurants {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .carte {
@@ -253,6 +307,16 @@ footer a:hover {
 .carte i {
   font-size: 23px;
   margin-bottom: 9px;
+}
+@media all and (min-width: 769px) {
+  .carte {
+    max-width: 350px;
+  }
+}
+@media all and (min-width: 1025px) {
+  .carte {
+    max-width: 275px;
+  }
 }
 
 .nouveau {
