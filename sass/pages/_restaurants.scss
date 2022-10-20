@@ -14,6 +14,12 @@ header a {
     object-fit: cover;
     width: 100%;
     height: 275px;
+    @include min-tablette {
+        height: 325px;
+    }
+    @include min-desktop {
+        height: 375px;
+    }
 }
 
 .menu {
@@ -27,6 +33,9 @@ header a {
         font-size: 28px;
         font-weight: 500;
         margin: 31px 0 29px 0;
+        @include min-tablette {
+            padding-right: 50px;
+        }
     }
     h3{
         font-size: 16px;
@@ -37,11 +46,19 @@ header a {
         align-items: center;
         justify-content: space-between;
         padding: 0 25px 0 6px;
+        @include min-tablette {
+            justify-content: center;
+        }
     }
     &__contenu {
         display: flex;
         flex-direction: column;
         margin-bottom: 27px;
+        @include min-tablette {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
     }
     i {
         font-size: 25px;
@@ -82,6 +99,12 @@ header a {
         color: $gris-fonce;
         font-size: 15px;
         font-weight: 600;
+    }
+    &-liste {
+        @include min-tablette {
+            min-width: 350px;
+            margin: 0 5px;
+        }
     }
 }
 

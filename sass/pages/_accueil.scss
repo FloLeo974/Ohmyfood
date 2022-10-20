@@ -42,13 +42,6 @@
 main h2 {
     @include min-tablette {
         text-align: center;
-        margin-bottom: 35px;
-        .fonctionnement {
-            margin-top: 35px;
-        }
-        .restaurants{
-            padding-top: 35px;
-        }
     }
 }
 
@@ -56,6 +49,9 @@ main h2 {
     margin-bottom: 67px;
     h2 {
         margin: 47px 0 27px 22px;
+        @include min-tablette {
+        margin: 35px 22px;
+        }
     }
     &__etapes {
         margin-bottom: 18px;
@@ -97,7 +93,7 @@ main h2 {
     font-weight: 500;
     margin: 16px 0;
     @include min-tablette {
-        margin-right: 20px;
+        margin-right: 30px;
     }
 }
 
@@ -126,6 +122,10 @@ main h2 {
 #restaurants {
     margin: 0 0 22px 20px;
     padding-top: 52px;
+    @include min-tablette {
+        padding-top: 35px;
+        margin: 0 20px 35px 20px;
+    }
 }
 
 .selection-restaurants {
