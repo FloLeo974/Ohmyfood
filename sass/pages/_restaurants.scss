@@ -85,6 +85,12 @@ header a {
     padding: 0 23px 0 10px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 5px 10px $gris;
+    animation: apparition 800ms cubic-bezier(.7,.2,.8,.5) backwards;
+        @for $i from 2 through 3 {
+            &--#{$i} {
+                animation-delay: 100ms * $i;
+            }
+        }
     h5 {
         font-size: 18px;
         font-weight: 500;
