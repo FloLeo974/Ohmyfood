@@ -437,7 +437,7 @@ header a {
 .plats {
   display: flex;
   justify-content: space-between;
-  align-items: last baseline;
+  align-items: center;
   background-color: white;
   margin-bottom: 14px;
   padding: 0 23px 0 10px;
@@ -465,6 +465,7 @@ header a {
   color: rgb(53, 53, 53);
   font-size: 15px;
   font-weight: 600;
+  padding-top: 25px;
 }
 @media all and (min-width: 769px) {
   .plats-liste {
