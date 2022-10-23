@@ -15,6 +15,7 @@
     @media all and (min-width: map-get($breakpoints, tablette))
         {@content;} 
 }
+
 @mixin min-desktop {
     @media all and (min-width: map-get($breakpoints, desktop))
         {@content;} 

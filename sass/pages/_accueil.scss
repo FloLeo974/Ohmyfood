@@ -78,6 +78,9 @@ main h2 {
     i {
         margin-left: 21px;
     }
+    @include min-tablette {
+        margin-bottom: 50px;
+    }
 }
 
 .etape-numero {
@@ -93,6 +96,9 @@ main h2 {
     font-weight: 500;
     margin: 16px 0;
     @include min-tablette {
+        margin-right: 50px;
+    }
+    @include min-desktop {
         margin-right: 30px;
     }
 }
@@ -130,6 +136,7 @@ main h2 {
 
 .selection-restaurants {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -170,10 +177,12 @@ main h2 {
         margin-bottom: 9px;
     }
     @include min-tablette {
-        max-width: 350px;
+        width: 46%;
+        margin: 0 1.5% 18px 1.5%;
     }
     @include min-desktop {
-        max-width: 275px;
+        width: 22%;
+        margin: 0 1% 18px 1%;
     }
 }
 
