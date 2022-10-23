@@ -443,7 +443,7 @@ header a {
   padding: 0 23px 0 10px;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 5px 10px rgb(234, 234, 234);
-  animation: apparition 800ms cubic-bezier(0.7, 0.2, 0.8, 0.5) backwards;
+  animation: apparition 800ms ease-in-out backwards;
 }
 .plats--2 {
   animation-delay: 200ms;
