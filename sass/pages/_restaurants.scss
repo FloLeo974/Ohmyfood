@@ -78,13 +78,14 @@ header a {
 
 .plats {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color:white;
     margin-bottom: 14px;
     padding: 0 23px 0 10px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 5px 10px $gris;
+    overflow: hidden;
+    white-space: nowrap;
     animation: apparition 800ms ease-in-out backwards;
         @for $i from 2 through 3 {
             &--#{$i} {
@@ -95,22 +96,42 @@ header a {
         font-size: 18px;
         font-weight: 500;
         margin: 12px 0 4px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     p {
         font-size: 15px;
         font-weight: 300;
         margin: 4px 0 12px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__tarif {
         color: $gris-fonce;
         font-size: 15px;
         font-weight: 600;
         padding-top: 25px;
+        transition: transform 300ms 100ms ease-in-out;
     }
     &-liste {
         @include min-tablette {
-            min-width: 350px;
+            min-width: 318px;
             margin: 0 5px;
+        }
+    }
+    &__description {
+        flex-grow: 1;
+        overflow: hidden;
+    }
+    &:hover {
+        & .plats__ajout {
+            transform: translateX(-82px); 
+        }
+        & .plats__coche {
+            transform: rotate(0);
+        }
+        & .plats__tarif {
+            transform: translateX(-70px)
         }
     }
 }
@@ -122,3 +143,29 @@ header a {
         @include bouton;
     }
 }
+
+.plats__ajout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    margin: 0 -130px 0 25px;
+    padding: 0px 50px 0px 36px;
+    background-color: $couleur-tertiaire;
+    transform: translateX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.plats__coche {
+    background-color: white;
+    transform: rotate(180deg);
+    transition: transform 500ms ease-in-out;
+    margin-left: -12px;
+    border-radius: 25px 25px;
+}
+
+.menu .fa-check {
+    color: $couleur-tertiaire;
+    font-size: 20px;
+    padding: 2px 2px;
+    }

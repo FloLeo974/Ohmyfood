@@ -515,13 +515,14 @@ header a {
 
 .plats {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: white;
   margin-bottom: 14px;
   padding: 0 23px 0 10px;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 5px 10px rgb(234, 234, 234);
+  overflow: hidden;
+  white-space: nowrap;
   animation: apparition 800ms ease-in-out backwards;
 }
 .plats--2 {
@@ -534,23 +535,41 @@ header a {
   font-size: 18px;
   font-weight: 500;
   margin: 12px 0 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plats p {
   font-size: 15px;
   font-weight: 300;
   margin: 4px 0 12px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plats__tarif {
   color: rgb(53, 53, 53);
   font-size: 15px;
   font-weight: 600;
   padding-top: 25px;
+  transition: transform 300ms 100ms ease-in-out;
 }
 @media all and (min-width: 769px) {
   .plats-liste {
-    min-width: 350px;
+    min-width: 318px;
     margin: 0 5px;
   }
+}
+.plats__description {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.plats:hover .plats__ajout {
+  transform: translateX(-82px);
+}
+.plats:hover .plats__coche {
+  transform: rotate(0);
+}
+.plats:hover .plats__tarif {
+  transform: translateX(-70px);
 }
 
 .bouton-commander {
@@ -568,6 +587,32 @@ header a {
 .bouton-commander a:hover {
   filter: brightness(1.15);
   box-shadow: 3px 5px 5px rgb(53, 53, 53);
+}
+
+.plats__ajout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  margin: 0 -130px 0 25px;
+  padding: 0px 50px 0px 36px;
+  background-color: #99E2D0;
+  transform: translateX(0);
+  transition: transform 500ms ease-in-out;
+}
+
+.plats__coche {
+  background-color: white;
+  transform: rotate(180deg);
+  transition: transform 500ms ease-in-out;
+  margin-left: -12px;
+  border-radius: 25px 25px;
+}
+
+.menu .fa-check {
+  color: #99E2D0;
+  font-size: 20px;
+  padding: 2px 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
