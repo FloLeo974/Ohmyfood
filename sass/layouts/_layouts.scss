@@ -13,10 +13,11 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     transition: all 350ms;
     &:hover {
-      text-shadow: none;
-      color: transparent;
-      background-image: linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
-      background-clip: text;
-      transform: scale(1.15);
-      }
+        cursor: pointer;
+        text-shadow: none;
+        color: transparent;
+        background-image: linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
+        background-clip: text;
+        transform: scale(1.15);
+        }
 }

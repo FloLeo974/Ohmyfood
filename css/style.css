@@ -124,6 +124,7 @@ footer a:hover {
   transition: all 350ms;
 }
 .fa-heart:hover {
+  cursor: pointer;
   text-shadow: none;
   color: transparent;
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
@@ -566,6 +567,9 @@ header a {
   transition: transform 500ms ease-in-out;
   margin-left: -12px;
   border-radius: 25px 25px;
+}
+.plats:hover {
+  cursor: pointer;
 }
 .plats:hover .plats__ajout {
   transform: translateX(-85px);

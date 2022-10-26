@@ -150,6 +150,7 @@ header a {
         border-radius: 25px 25px;
     }
     &:hover {
+        cursor: pointer;
         & .plats__ajout {
             transform: translateX(-85px);
         }
