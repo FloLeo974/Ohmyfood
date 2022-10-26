@@ -512,6 +512,9 @@ header a {
 .plats--3 {
   animation-delay: 300ms;
 }
+.plats--4 {
+  animation-delay: 400ms;
+}
 .plats h5 {
   font-size: 18px;
   font-weight: 500;
@@ -555,11 +558,11 @@ header a {
   padding: 0px 50px 0px 36px;
   background-color: #99E2D0;
   transform: translateX(0);
-  transition: all 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 .plats__coche {
   background-color: white;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   transition: transform 500ms ease-in-out;
   margin-left: -12px;
   border-radius: 25px 25px;
@@ -568,7 +571,7 @@ header a {
   transform: translateX(-85px);
 }
 .plats:hover .plats__coche {
-  transform: rotate(0);
+  transform: rotate(360deg);
 }
 .plats:hover .plats__tarif {
   width: 95px;

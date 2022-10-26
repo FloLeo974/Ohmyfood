@@ -92,7 +92,7 @@ header a {
     overflow: hidden;
     white-space: nowrap;
     animation: apparition 800ms ease-in-out backwards;
-        @for $i from 2 through 3 {
+        @for $i from 2 through 4 {
             &--#{$i} {
                 animation-delay: 100ms * $i;
             }
@@ -140,11 +140,11 @@ header a {
         padding: 0px 50px 0px 36px;
         background-color: $couleur-tertiaire;
         transform: translateX(0);
-        transition: all 500ms ease-in-out;
+        transition: transform 500ms ease-in-out;
     }
     &__coche {
         background-color: white;
-        transform: rotate(180deg);
+        transform: rotate(0deg);
         transition: transform 500ms ease-in-out;
         margin-left: -12px;
         border-radius: 25px 25px;
@@ -154,7 +154,7 @@ header a {
             transform: translateX(-85px);
         }
         & .plats__coche {
-            transform: rotate(0);
+            transform: rotate(360deg);
         }
         & .plats__tarif {
             width: 95px;
