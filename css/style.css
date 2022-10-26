@@ -11,11 +11,9 @@
 @keyframes fond-chargement {
   0% {
     background-color: white;
-    z-index: 1;
   }
   100% {
     background-color: white;
-    z-index: 1;
   }
 }
 @keyframes chargement {
@@ -24,6 +22,22 @@
   }
   100% {
     transform: scale(1.5);
+  }
+}
+@keyframes visible {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes invisible {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
   }
 }
 * {
@@ -134,6 +148,7 @@ footer a:hover {
 
 body {
   position: relative;
+  animation: invisible 2800ms;
 }
 
 .loader-fond {
@@ -143,8 +158,8 @@ body {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  animation: fond-chargement 2800ms;
-  z-index: -1;
+  visibility: hidden;
+  animation: fond-chargement 2800ms, visible 2800ms;
 }
 
 .loader {

@@ -12,12 +12,9 @@
 @keyframes fond-chargement {
     0% {
         background-color: white;
-        z-index: 1;
     }
-
     100% {
         background-color: white;
-        z-index: 1;
     }
 }
 
@@ -25,11 +22,26 @@
     0% {
         transform: scale(1);
     }
-
     100% {
         transform: scale(1.5);
     }
 }
 
+@keyframes visible {
+    0% {
+        visibility: visible;    
+    }
+    100% {
+        visibility: visible;
+    }
+}
 
+@keyframes invisible {
+    0% {
+        visibility: hidden;    
+    }
+    100% {
+        visibility: hidden;
+    }
+}
     
