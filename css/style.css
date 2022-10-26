@@ -282,10 +282,10 @@ body {
   margin: 0 20px 22px 32px;
   padding: 12px 0;
   border-radius: 20px 20px;
-  box-shadow: 1px 8px 6px rgb(234, 234, 234);
+  box-shadow: 1px 6px 6px rgb(234, 234, 234);
 }
 .fonctionnement__etape:hover {
-  background-color: #99E2D0;
+  filter: brightness(0.97);
 }
 .fonctionnement__etape:hover i {
   color: #9356DC;
