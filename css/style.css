@@ -559,8 +559,9 @@ header a {
   }
 }
 .plats__description {
-  flex-grow: 1;
   overflow: hidden;
+  text-overflow: ellipsis;
+  width: 94%;
 }
 .plats:hover .plats__ajout {
   transform: translateX(-82px);
@@ -570,6 +571,7 @@ header a {
 }
 .plats:hover .plats__tarif {
   transform: translateX(-70px);
+  padding-left: 50px;
 }
 
 .bouton-commander {
@@ -597,7 +599,7 @@ header a {
   margin: 0 -130px 0 25px;
   padding: 0px 50px 0px 36px;
   background-color: #99E2D0;
-  transform: translateX(0);
+  transform: translateX(100px);
   transition: transform 500ms ease-in-out;
 }
 

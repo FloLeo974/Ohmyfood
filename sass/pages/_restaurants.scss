@@ -112,6 +112,7 @@ header a {
         font-weight: 600;
         padding-top: 25px;
         transition: transform 300ms 100ms ease-in-out;
+        
     }
     &-liste {
         @include min-tablette {
@@ -120,8 +121,9 @@ header a {
         }
     }
     &__description {
-        flex-grow: 1;
         overflow: hidden;
+        text-overflow: ellipsis;
+        width: 94%;
     }
     &:hover {
         & .plats__ajout {
@@ -131,7 +133,8 @@ header a {
             transform: rotate(0);
         }
         & .plats__tarif {
-            transform: translateX(-70px)
+            transform: translateX(-70px);
+            padding-left: 50px;
         }
     }
 }
@@ -152,7 +155,7 @@ header a {
     margin: 0 -130px 0 25px;
     padding: 0px 50px 0px 36px;
     background-color: $couleur-tertiaire;
-    transform: translateX(0);
+    transform: translateX(100px);
     transition: transform 500ms ease-in-out;
 }
 
