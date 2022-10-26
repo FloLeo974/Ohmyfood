@@ -1,6 +1,5 @@
 body {
     position: relative;
-    
 }
 
 .loader-fond {
@@ -20,30 +19,26 @@ body {
     align-items: center;
     height: 100px;
     width: 200px;
-}
-
-.loader__boule {
-    height: 25px;
-    width: 25px;
-    border-radius: 25px 25px;
-    animation: chargement 600ms linear alternate 4;
-        @for $i from 2 through 3 {
-            &--#{$i} {
-                animation-delay: 200ms * ($i - 1);
+    &__boule {
+        height: 25px;
+        width: 25px;
+        border-radius: 25px 25px;
+        animation: chargement 600ms linear alternate 4;
+            @for $i from 2 through 3 {
+                &--#{$i} {
+                    animation-delay: 200ms * ($i - 1);
+                }
             }
+        &--1 {
+            background-color: $couleur-tertiaire;
         }
-}
-
-.loader__boule--1 {
-    background-color: $couleur-tertiaire;
-}
-
-.loader__boule--2 {
-    background-color: $couleur-secondaire;
-}
-
-.loader__boule--3 {
-    background-color: $couleur-primaire;
+        &--2 {
+            background-color: $couleur-secondaire;
+        }
+        &--3 {
+            background-color: $couleur-primaire;
+        }
+    }
 }
 
 .infos {

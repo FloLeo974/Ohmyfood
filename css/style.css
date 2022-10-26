@@ -1,18 +1,3 @@
-/* en attente
-@keyframes remplissage {
-    0% {
-        color: white;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    }
-    100% {
-        text-shadow: none;
-        color: transparent;
-        background-image: linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
-        background-clip: text;
-        transform: scale(1.15);
-    }
-}
-*/
 @keyframes apparition {
   0% {
     opacity: 0;
@@ -137,11 +122,6 @@ footer a:hover {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   transition: all 350ms;
-  /* en attente
-  &:active {
-    animation: remplissage 350ms forwards;
-  }
-  */
 }
 .fa-heart:hover {
   text-shadow: none;
@@ -173,7 +153,6 @@ body {
   height: 100px;
   width: 200px;
 }
-
 .loader__boule {
   height: 25px;
   width: 25px;
@@ -186,15 +165,12 @@ body {
 .loader__boule--3 {
   animation-delay: 400ms;
 }
-
 .loader__boule--1 {
   background-color: #99E2D0;
 }
-
 .loader__boule--2 {
   background-color: #FF79DA;
 }
-
 .loader__boule--3 {
   background-color: #9356DC;
 }
@@ -505,6 +481,11 @@ header a {
 .menu section {
   margin-bottom: 25px;
 }
+.menu .fa-check {
+  color: #99E2D0;
+  font-size: 20px;
+  padding: 2px 2px;
+}
 
 .barre {
   background-color: #99E2D0;
@@ -565,6 +546,24 @@ header a {
   overflow: hidden;
   flex: 1;
 }
+.plats__ajout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+  margin: 0 -130px 0 25px;
+  padding: 0px 50px 0px 36px;
+  background-color: #99E2D0;
+  transform: translateX(0);
+  transition: all 500ms ease-in-out;
+}
+.plats__coche {
+  background-color: white;
+  transform: rotate(180deg);
+  transition: transform 500ms ease-in-out;
+  margin-left: -12px;
+  border-radius: 25px 25px;
+}
 .plats:hover .plats__ajout {
   transform: translateX(-85px);
 }
@@ -590,32 +589,6 @@ header a {
 .bouton-commander a:hover {
   filter: brightness(1.15);
   box-shadow: 3px 5px 5px rgb(53, 53, 53);
-}
-
-.plats__ajout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 68px;
-  margin: 0 -130px 0 25px;
-  padding: 0px 50px 0px 36px;
-  background-color: #99E2D0;
-  transform: translateX(0);
-  transition: all 500ms ease-in-out;
-}
-
-.plats__coche {
-  background-color: white;
-  transform: rotate(180deg);
-  transition: transform 500ms ease-in-out;
-  margin-left: -12px;
-  border-radius: 25px 25px;
-}
-
-.menu .fa-check {
-  color: #99E2D0;
-  font-size: 20px;
-  padding: 2px 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -67,6 +67,11 @@ header a {
     section {
         margin-bottom: 25px;
     }
+    .fa-check {
+        color: $couleur-tertiaire;
+        font-size: 20px;
+        padding: 2px 2px;
+    }
 }
 
 .barre {
@@ -126,6 +131,24 @@ header a {
         overflow: hidden;
         flex: 1;
     }
+    &__ajout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 68px;
+        margin: 0 -130px 0 25px;
+        padding: 0px 50px 0px 36px;
+        background-color: $couleur-tertiaire;
+        transform: translateX(0);
+        transition: all 500ms ease-in-out;
+    }
+    &__coche {
+        background-color: white;
+        transform: rotate(180deg);
+        transition: transform 500ms ease-in-out;
+        margin-left: -12px;
+        border-radius: 25px 25px;
+    }
     &:hover {
         & .plats__ajout {
             transform: translateX(-85px);
@@ -146,29 +169,3 @@ header a {
         @include bouton;
     }
 }
-
-.plats__ajout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 68px;
-    margin: 0 -130px 0 25px;
-    padding: 0px 50px 0px 36px;
-    background-color: $couleur-tertiaire;
-    transform: translateX(0);
-    transition: all 500ms ease-in-out;
-}
-
-.plats__coche {
-    background-color: white;
-    transform: rotate(180deg);
-    transition: transform 500ms ease-in-out;
-    margin-left: -12px;
-    border-radius: 25px 25px;
-}
-
-.menu .fa-check {
-    color: $couleur-tertiaire;
-    font-size: 20px;
-    padding: 2px 2px;
-    }
