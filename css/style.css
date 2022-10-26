@@ -262,6 +262,7 @@ body {
   box-shadow: 1px 6px 6px rgb(234, 234, 234);
 }
 .fonctionnement__etape:hover {
+  cursor: pointer;
   filter: brightness(0.97);
 }
 .fonctionnement__etape:hover i {
