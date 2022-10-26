@@ -557,7 +557,7 @@ header a {
 }
 @media all and (min-width: 769px) {
   .plats-liste {
-    min-width: 318px;
+    width: 318px;
     margin: 0 5px;
   }
 }

@@ -118,7 +118,7 @@ header a {
     }
     &-liste {
         @include min-tablette {
-            min-width: 318px;
+            width: 318px;
             margin: 0 5px;
         }
     }
